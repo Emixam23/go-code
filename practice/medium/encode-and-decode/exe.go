@@ -23,8 +23,6 @@ func (s *Solution) Decode(str string) []string {
 	for i < len(str) {
 		// find the length of the string
 		for i < len(str) && str[i] != '#' {
-			currentChar := string(rune(str[i]))
-			_ = currentChar
 			i++
 		}
 		if i == len(str) {
@@ -42,5 +40,3 @@ func (s *Solution) Decode(str string) []string {
 	}
 	return res
 }
-
-// 5#hello5#world
